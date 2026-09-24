@@ -1,6 +1,6 @@
 [Unit]
 Description=Hermes Watch Cybercore Discord bot
-Documentation=https://darkstardevx.github.io/hermes/
+Documentation=https://cybercore-tech.github.io/hermes/
 Wants=network-online.target
 After=network-online.target
 
