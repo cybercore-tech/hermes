@@ -20,11 +20,11 @@ const REPOS: &[(&str, &str)] = &[
     ("aetherscope", "darkstardevx/aetherscope"),
     ("ghostport", "darkstardevx/ghostport"),
     ("apexdaemon", "darkstardevx/apexdaemon"),
-    ("cybercore", "darkstardevx/cybercore"),
+    ("cybercore", "cybercore-tech/cybercore"),
     ("cyberdeck", "darkstardevx/cyberdeck"),
     ("cyberplug", "darkstardevx/cyberplug"),
     ("cyberplug-bar-widget", "darkstardevx/cyberplug-bar-widget"),
-    ("diagprint", "darkstardevx/diagprint"),
+    ("diagprint", "cybercore-tech/diagprint"),
     ("gateflow", "darkstardevx/gateflow"),
     ("agentforge", "darkstardevx/agentforge"),
 ];
