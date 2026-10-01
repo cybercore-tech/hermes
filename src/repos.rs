@@ -1,59 +1,61 @@
-//! The portfolio registry -- every public darkstardevx repo that's actually
+//! The portfolio registry -- every public cybercore-tech repo that's actually
 //! part of the Cybercore family (queried live via `gh api
-//! users/darkstardevx/repos`, not guessed from memory). Deliberately
-//! excludes: forks (OmNote), the profile README and hub-site repos
-//! (darkstardevx, darkstardevx.github.io -- not binary tools with
+//! users/cybercore-tech/repos`, not guessed from memory). Deliberately
+//! excludes: the profile README and hub-site repos (not binary tools with
 //! releases), and ferraxis/vexlang (real projects, but a separate
 //! compiler/language-design line of work, not Cybercore). A private repo
 //! here would just make every command report "unknown," so keep this in
 //! sync with reality rather than adding speculatively.
 
 const REPOS: &[(&str, &str)] = &[
-    ("echo", "darkstardevx/echo"),
-    ("cybermeta", "darkstardevx/cybermeta"),
-    ("cybervault", "darkstardevx/cybervault"),
-    ("keysmith", "darkstardevx/keysmith"),
-    ("cyberterm", "darkstardevx/cyberterm"),
-    ("sentrygrid", "darkstardevx/sentrygrid"),
-    ("wraithflow", "darkstardevx/wraithflow"),
-    ("vortexwall", "darkstardevx/vortexwall"),
-    ("aetherscope", "darkstardevx/aetherscope"),
-    ("ghostport", "darkstardevx/ghostport"),
-    ("apexdaemon", "darkstardevx/apexdaemon"),
+    ("echo", "cybercore-tech/echo"),
+    ("cybermeta", "cybercore-tech/cybermeta"),
+    ("cybervault", "cybercore-tech/cybervault"),
+    ("keysmith", "cybercore-tech/keysmith"),
+    ("cyberterm", "cybercore-tech/cyberterm"),
+    ("sentrygrid", "cybercore-tech/sentrygrid"),
+    ("wraithflow", "cybercore-tech/wraithflow"),
+    ("vortexwall", "cybercore-tech/vortexwall"),
+    ("aetherscope", "cybercore-tech/aetherscope"),
+    ("ghostport", "cybercore-tech/ghostport"),
+    ("apexdaemon", "cybercore-tech/apexdaemon"),
     ("cybercore", "cybercore-tech/cybercore"),
-    ("cyberdeck", "darkstardevx/cyberdeck"),
-    ("cyberplug", "darkstardevx/cyberplug"),
-    ("cyberplug-bar-widget", "darkstardevx/cyberplug-bar-widget"),
+    ("cyberdeck", "cybercore-tech/cyberdeck"),
+    ("cyberplug", "cybercore-tech/cyberplug"),
+    (
+        "cyberplug-bar-widget",
+        "cybercore-tech/cyberplug-bar-widget",
+    ),
     ("diagprint", "cybercore-tech/diagprint"),
-    ("gateflow", "darkstardevx/gateflow"),
-    ("agentforge", "darkstardevx/agentforge"),
+    ("gateflow", "cybercore-tech/gateflow"),
+    ("agentforge", "cybercore-tech/agentforge"),
 ];
 
 const FEATURED_TOOLS: &[(&str, &str, &str)] = &[
     (
         "cybercore",
         "The shared design system every tool above is built on.",
-        "https://darkstardevx.github.io/cybercore/",
+        "https://cybercore-tech.github.io/cybercore/",
     ),
     (
         "cyberdeck",
         "Systems intelligence framework.",
-        "https://darkstardevx.github.io/cyberdeck/",
+        "https://cybercore-tech.github.io/cyberdeck/",
     ),
     (
         "diagprint",
         "Rust diagnostics lifecycle framework.",
-        "https://darkstardevx.github.io/diagprint/",
+        "https://cybercore-tech.github.io/diagprint/",
     ),
     (
         "gateflow",
         "Kernel-sandbox testing with netns, chaos, and veth.",
-        "https://darkstardevx.github.io/gateflow/",
+        "https://cybercore-tech.github.io/gateflow/",
     ),
     (
         "cybermeta",
         "TUI EXIF metadata tool.",
-        "https://darkstardevx.github.io/cybermeta/",
+        "https://cybercore-tech.github.io/cybermeta/",
     ),
 ];
 
